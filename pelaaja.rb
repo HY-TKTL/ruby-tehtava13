@@ -9,10 +9,15 @@ class Pelaaja
  end
 
  def maaleja
-  maalimaara++
+  @maalimaara
+ end
+
+ def lisaa_maali
+  @maalimaara = @maalimaara + 1
  end
 
  def to_s
-  "#{@nimi} (#{@pituus}) maaleja #{@maalimaara}"
+  "#{@nimi} (#{@pituus} cm) maaleja #{@maalimaara}"
  end
+
 end
